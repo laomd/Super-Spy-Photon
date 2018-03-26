@@ -32,6 +32,7 @@ GameObject:
   - component: {fileID: 1500002}
   - component: {fileID: 1200002}
   - component: {fileID: 2600002}
+  - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: LinesUpwards
   m_TagString: Untagged
@@ -53,6 +54,7 @@ GameObject:
   - component: {fileID: 1500004}
   - component: {fileID: 1200004}
   - component: {fileID: 2600004}
+  - component: {fileID: 11400002}
   m_Layer: 0
   m_Name: LinesWide
   m_TagString: Untagged
@@ -134,8 +136,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400012}
-  - component: {fileID: 114396560093327128}
-  - component: {fileID: 114143247363156266}
+  - component: {fileID: 11400004}
   m_Layer: 0
   m_Name: ManaRegenerationBlue
   m_TagString: Untagged
@@ -924,12 +925,56 @@ ParticleRenderer:
 --- !u!1002 &2600011
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5563ecb7e29ea4bb42a6266df0e390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 0
+  delayPlusTime: 0.5
+  rampDownTime: 1
+  origMinEmission: 0
+  origMaxEmission: 0
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5563ecb7e29ea4bb42a6266df0e390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 0
+  delayPlusTime: 0.5
+  rampDownTime: 1
+  origMinEmission: 0
+  origMaxEmission: 0
 --- !u!1002 &11400003
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78251438f54ccde4fa7347051dac2f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 5
 --- !u!1002 &11400005
 EditorExtensionImpl:
   serializedVersion: 6
@@ -947,49 +992,3 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!114 &114143247363156266
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e70bf38b1114ca845ada9e32829be266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotate: 0
-  move: 0
-  target: {x: 0, y: 0, z: 0}
---- !u!114 &114396560093327128
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 109
-    i1: 166
-    i2: 71
-    i3: 165
-    i4: 221
-    i5: 245
-    i6: 23
-    i7: 68
-    i8: 26
-    i9: 240
-    i10: 233
-    i11: 22
-    i12: 234
-    i13: 134
-    i14: 103
-    i15: 215
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0

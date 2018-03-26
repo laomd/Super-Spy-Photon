@@ -92,8 +92,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400008}
-  - component: {fileID: 114299487734448436}
-  - component: {fileID: 114756937876310560}
+  - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: STATUS_Prisoned
   m_TagString: Untagged
@@ -788,6 +787,18 @@ MeshParticleEmitter:
 --- !u!1002 &8700007
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78251438f54ccde4fa7347051dac2f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 3
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
@@ -805,49 +816,3 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!114 &114299487734448436
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 206
-    i1: 40
-    i2: 150
-    i3: 233
-    i4: 20
-    i5: 102
-    i6: 76
-    i7: 4
-    i8: 56
-    i9: 0
-    i10: 0
-    i11: 4
-    i12: 220
-    i13: 11
-    i14: 63
-    i15: 228
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
---- !u!114 &114756937876310560
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e70bf38b1114ca845ada9e32829be266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotate: 0
-  move: 0
-  target: {x: 0, y: 0, z: 0}

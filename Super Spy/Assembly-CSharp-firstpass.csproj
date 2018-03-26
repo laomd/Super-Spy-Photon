@@ -51,8 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\Nanolink\NanoBuffers.cs" />
-     <Compile Include="Assets\Plugins\Nanolink\NanoClient.cs" />
      <Compile Include="Assets\Plugins\WebSocket\WebSocket.cs" />
      <Compile Include="Assets\Standard Assets\Utility\EventSystemChecker.cs" />
      <None Include="Assets\Plugins\Photon3Unity3D.xml" />

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1500000}
   - component: {fileID: 1200000}
   - component: {fileID: 2600000}
+  - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: LightningSmokeMain
   m_TagString: Untagged
@@ -113,8 +114,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400010}
-  - component: {fileID: 114679528463294376}
-  - component: {fileID: 114527644466480910}
+  - component: {fileID: 11400004}
   m_Layer: 0
   m_Name: StaticChargeEffect
   m_TagString: Untagged
@@ -1072,9 +1072,37 @@ ParticleRenderer:
 --- !u!1002 &2600013
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5563ecb7e29ea4bb42a6266df0e390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 0.1
+  delayPlusTime: 0
+  rampDownTime: 1
+  origMinEmission: 0
+  origMaxEmission: 0
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78251438f54ccde4fa7347051dac2f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 5
 --- !u!1002 &11400005
 EditorExtensionImpl:
   serializedVersion: 6
@@ -1092,49 +1120,3 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!114 &114527644466480910
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e70bf38b1114ca845ada9e32829be266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotate: 0
-  move: 0
-  target: {x: 0, y: 0, z: 0}
---- !u!114 &114679528463294376
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 62
-    i1: 170
-    i2: 156
-    i3: 173
-    i4: 248
-    i5: 150
-    i6: 103
-    i7: 84
-    i8: 187
-    i9: 77
-    i10: 51
-    i11: 97
-    i12: 115
-    i13: 202
-    i14: 9
-    i15: 51
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0

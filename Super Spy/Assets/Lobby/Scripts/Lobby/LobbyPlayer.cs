@@ -17,13 +17,6 @@ namespace Prototype.NetworkLobby
         public GameObject remoteIcone;
 		public Image heroInfo;
 
-		PunTeams.Team myTeam;
-		public PunTeams.Team team {
-			get {
-				return myTeam;
-			}
-		}
-
 		[HideInInspector]
 		public bool isReady;
 		public static Dictionary<string, string> spriteToGamePlayer;
@@ -43,29 +36,19 @@ namespace Prototype.NetworkLobby
 			}
 			ClientReady (false, null);
 			if (isLocalPlayer) {
-				myTeam = PhotonNetwork.player.GetTeam ();
 				remoteIcone.SetActive (false);
 				localIcone.SetActive (true);
 			}
 		}
 
-		void Update() {
-			if (transform.parent == null) {
-				if (myTeam == PhotonNetwork.player.GetTeam()) {
-					transform.SetParent (RoomManager.instance.friendList, false);
-				} else {
-					transform.SetParent (RoomManager.instance.enemyList, false);
-				}
-			}
-		}
-
-		public override void OnPhotonSerializeView (PhotonStream stream, PhotonMessageInfo info)
+		public override void OnPhotonInstantiate (PhotonMessageInfo info)
 		{
-			base.OnPhotonSerializeView (stream, info);
-			if (stream.isWriting) {
-				stream.SendNext (myTeam);
+			base.OnPhotonInstantiate (info);
+			PunTeams.Team myteam = (PunTeams.Team)(photonView.instantiationDataField [0]);
+			if (myteam == PhotonNetwork.player.GetTeam()) {
+				transform.SetParent (RoomManager.instance.friendList, false);
 			} else {
-				myTeam = (PunTeams.Team)stream.ReceiveNext ();
+				transform.SetParent (RoomManager.instance.enemyList, false);
 			}
 		}
 

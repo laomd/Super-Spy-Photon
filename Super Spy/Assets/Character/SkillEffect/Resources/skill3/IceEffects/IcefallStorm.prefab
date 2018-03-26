@@ -8,8 +8,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400000}
-  - component: {fileID: 114748095203307482}
-  - component: {fileID: 114594846955161112}
+  - component: {fileID: 11400000}
+  - component: {fileID: 11400002}
   m_Layer: 0
   m_Name: IcefallStorm
   m_TagString: Untagged
@@ -31,6 +31,7 @@ GameObject:
   - component: {fileID: 1500000}
   - component: {fileID: 1200000}
   - component: {fileID: 2600000}
+  - component: {fileID: 11400004}
   m_Layer: 0
   m_Name: StarfallSparks
   m_TagString: Untagged
@@ -49,6 +50,7 @@ GameObject:
   - component: {fileID: 1500002}
   - component: {fileID: 1200002}
   - component: {fileID: 2600002}
+  - component: {fileID: 11400006}
   m_Layer: 0
   m_Name: icesmoke
   m_TagString: Untagged
@@ -67,6 +69,7 @@ GameObject:
   - component: {fileID: 1500004}
   - component: {fileID: 1200004}
   - component: {fileID: 2600004}
+  - component: {fileID: 11400008}
   m_Layer: 0
   m_Name: LightningSparksExplosion
   m_TagString: Untagged
@@ -435,12 +438,95 @@ ParticleRenderer:
     x Tile: 1
     y Tile: 1
     cycles: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc59152019ae8a48a989eb38aec3384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createThis:
+  - {fileID: 100006, guid: f8974a606be0c9f438dbe8a14eb304ef, type: 2}
+  thisManyTimes: 8
+  overThisTime: 0.3
+  xWidth: 2
+  yWidth: 0
+  zWidth: 2
+  xRotMax: 0
+  yRotMax: 180
+  zRotMax: 0
+  allUseSameRotation: 0
+  detachToWorld: 1
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78251438f54ccde4fa7347051dac2f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 3
 --- !u!1002 &11400003
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5563ecb7e29ea4bb42a6266df0e390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 0
+  delayPlusTime: 0
+  rampDownTime: 1
+  origMinEmission: 0
+  origMaxEmission: 0
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5563ecb7e29ea4bb42a6266df0e390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 0.25
+  delayPlusTime: 0
+  rampDownTime: 1
+  origMinEmission: 0
+  origMaxEmission: 0
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5563ecb7e29ea4bb42a6266df0e390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 0.25
+  delayPlusTime: 0
+  rampDownTime: 1
+  origMinEmission: 0
+  origMaxEmission: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -455,49 +541,3 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!114 &114594846955161112
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e70bf38b1114ca845ada9e32829be266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotate: 0
-  move: 0
-  target: {x: 0, y: 0, z: 0}
---- !u!114 &114748095203307482
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 226
-    i1: 98
-    i2: 62
-    i3: 100
-    i4: 125
-    i5: 137
-    i6: 50
-    i7: 68
-    i8: 120
-    i9: 246
-    i10: 188
-    i11: 11
-    i12: 228
-    i13: 152
-    i14: 6
-    i15: 34
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0

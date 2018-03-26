@@ -49,6 +49,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400004}
+  - component: {fileID: 11100000}
   m_Layer: 0
   m_Name: HelixUpSingle_FBX
   m_TagString: Untagged
@@ -130,8 +131,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400012}
-  - component: {fileID: 114587788802996840}
-  - component: {fileID: 114285086193511394}
+  - component: {fileID: 11400002}
   m_Layer: 0
   m_Name: ShieldEffect
   m_TagString: Untagged
@@ -1192,6 +1192,21 @@ MeshFilter:
 --- !u!1002 &3300001
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!111 &11100000
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 310256d8fd4c3cb409cf2ebb2322ed35, type: 3}
+  m_Animations:
+  - {fileID: 7400000, guid: 310256d8fd4c3cb409cf2ebb2322ed35, type: 3}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1002 &11100001
 EditorExtensionImpl:
   serializedVersion: 6
@@ -1214,6 +1229,18 @@ MonoBehaviour:
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78251438f54ccde4fa7347051dac2f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 8
 --- !u!1002 &11400003
 EditorExtensionImpl:
   serializedVersion: 6
@@ -1231,49 +1258,3 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!114 &114285086193511394
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e70bf38b1114ca845ada9e32829be266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotate: 0
-  move: 0
-  target: {x: 0, y: 0, z: 0}
---- !u!114 &114587788802996840
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 84
-    i1: 255
-    i2: 221
-    i3: 35
-    i4: 207
-    i5: 79
-    i6: 70
-    i7: 228
-    i8: 26
-    i9: 144
-    i10: 32
-    i11: 79
-    i12: 241
-    i13: 144
-    i14: 68
-    i15: 138
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0

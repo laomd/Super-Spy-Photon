@@ -96,6 +96,10 @@ public class GameSceneManager : ManagerBase {
 		}
 	}
 
+	void OnGUI() {
+	
+	}
+
 	void OnGameOver(PunTeams.Team victory) {
 		DayNightController.instance.enabled = false;
 		foreach (var item in GameObject.FindObjectsOfType<Property>()) {

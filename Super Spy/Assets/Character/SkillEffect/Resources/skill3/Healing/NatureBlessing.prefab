@@ -8,6 +8,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400000}
+  - component: {fileID: 11100000}
   m_Layer: 0
   m_Name: NatureFlowers_FBX
   m_TagString: Untagged
@@ -426,6 +427,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400042}
+  - component: {fileID: 11100002}
   m_Layer: 0
   m_Name: NatureButterflies_prefab
   m_TagString: Untagged
@@ -1068,6 +1070,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400108}
+  - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: NatureBlessing
   m_TagString: Untagged
@@ -1131,6 +1134,7 @@ GameObject:
   - component: {fileID: 1500004}
   - component: {fileID: 1200004}
   - component: {fileID: 2600004}
+  - component: {fileID: 11400002}
   m_Layer: 0
   m_Name: NatureMossOnGround
   m_TagString: Untagged
@@ -4847,15 +4851,73 @@ MeshFilter:
 --- !u!1002 &3300087
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!111 &11100000
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400002, guid: 6668aa6e0a55b354d93dee284951f8a7, type: 3}
+  m_Animations:
+  - {fileID: 7400002, guid: 6668aa6e0a55b354d93dee284951f8a7, type: 3}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1002 &11100001
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!111 &11100002
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100042}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400002, guid: c423dc88257fe78458a35a8d518241de, type: 3}
+  m_Animations:
+  - {fileID: 7400002, guid: c423dc88257fe78458a35a8d518241de, type: 3}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1002 &11100003
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78251438f54ccde4fa7347051dac2f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 3
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5563ecb7e29ea4bb42a6266df0e390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 0
+  delayPlusTime: 0
+  rampDownTime: 1
+  origMinEmission: 0
+  origMaxEmission: 0
 --- !u!1002 &11400003
 EditorExtensionImpl:
   serializedVersion: 6

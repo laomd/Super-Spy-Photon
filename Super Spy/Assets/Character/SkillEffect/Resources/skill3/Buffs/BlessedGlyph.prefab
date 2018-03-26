@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1500000}
   - component: {fileID: 1200000}
   - component: {fileID: 2600000}
+  - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: LightbeamsUp
   m_TagString: Untagged
@@ -71,8 +72,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400010}
-  - component: {fileID: 114790737326231938}
-  - component: {fileID: 114781394330546070}
   m_Layer: 0
   m_Name: BlessedGlyph
   m_TagString: Untagged
@@ -1072,6 +1071,22 @@ ParticleRenderer:
 --- !u!1002 &2600017
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5563ecb7e29ea4bb42a6266df0e390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 0
+  delayPlusTime: 2
+  rampDownTime: 1
+  origMinEmission: 0
+  origMaxEmission: 0
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
@@ -1089,49 +1104,3 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!114 &114781394330546070
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e70bf38b1114ca845ada9e32829be266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotate: 0
-  move: 0
-  target: {x: 0, y: 0, z: 0}
---- !u!114 &114790737326231938
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 25
-    i1: 22
-    i2: 245
-    i3: 32
-    i4: 136
-    i5: 32
-    i6: 165
-    i7: 196
-    i8: 250
-    i9: 125
-    i10: 66
-    i11: 177
-    i12: 116
-    i13: 243
-    i14: 12
-    i15: 112
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0

@@ -113,8 +113,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400008}
-  - component: {fileID: 114602502234913978}
-  - component: {fileID: 114001372974197004}
+  - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: ShieldEffectSubtlePurplish
   m_TagString: Untagged
@@ -776,6 +775,18 @@ ParticleRenderer:
 --- !u!1002 &2600009
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78251438f54ccde4fa7347051dac2f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 8
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
@@ -793,49 +804,3 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!114 &114001372974197004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e70bf38b1114ca845ada9e32829be266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotate: 0
-  move: 0
-  target: {x: 0, y: 0, z: 0}
---- !u!114 &114602502234913978
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 200
-    i1: 196
-    i2: 229
-    i3: 151
-    i4: 25
-    i5: 201
-    i6: 192
-    i7: 244
-    i8: 138
-    i9: 231
-    i10: 59
-    i11: 215
-    i12: 144
-    i13: 125
-    i14: 173
-    i15: 198
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0

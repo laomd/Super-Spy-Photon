@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1500000}
   - component: {fileID: 1200000}
   - component: {fileID: 2600000}
+  - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: LinesUpwards
   m_TagString: Untagged
@@ -92,8 +93,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 400008}
-  - component: {fileID: 114827543623583116}
-  - component: {fileID: 114396128847905468}
+  - component: {fileID: 11400002}
   m_Layer: 0
   m_Name: ManaRegenerationEffect
   m_TagString: Untagged
@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 1500012}
   - component: {fileID: 1200012}
   - component: {fileID: 2600012}
+  - component: {fileID: 11400004}
   m_Layer: 0
   m_Name: LinesInAir
   m_TagString: Untagged
@@ -1368,12 +1369,56 @@ ParticleRenderer:
 --- !u!1002 &2600017
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5563ecb7e29ea4bb42a6266df0e390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 0
+  delayPlusTime: 0.5
+  rampDownTime: 1
+  origMinEmission: 0
+  origMaxEmission: 0
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78251438f54ccde4fa7347051dac2f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 5
 --- !u!1002 &11400003
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5563ecb7e29ea4bb42a6266df0e390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 0
+  delayPlusTime: 0.5
+  rampDownTime: 1
+  origMinEmission: 0
+  origMaxEmission: 0
 --- !u!1002 &11400005
 EditorExtensionImpl:
   serializedVersion: 6
@@ -1391,49 +1436,3 @@ Prefab:
 --- !u!1002 &100100001
 EditorExtensionImpl:
   serializedVersion: 6
---- !u!114 &114396128847905468
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e70bf38b1114ca845ada9e32829be266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotate: 0
-  move: 0
-  target: {x: 0, y: 0, z: 0}
---- !u!114 &114827543623583116
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 241
-    i1: 23
-    i2: 125
-    i3: 255
-    i4: 233
-    i5: 50
-    i6: 117
-    i7: 100
-    i8: 90
-    i9: 22
-    i10: 71
-    i11: 180
-    i12: 121
-    i13: 5
-    i14: 63
-    i15: 143
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0

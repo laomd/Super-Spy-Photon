@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Character\Scripts\AttackBase.cs">
+    <Files>
+      <File FileName="Assets\Character\Scripts\HeroAnimatorController.cs" Line="11" Column="61" />
+      <File FileName="Assets\Character\XiaoBin\Scripts\AnimatorControllerBase.cs" Line="24" Column="2" />
+      <File FileName="Assets\Character\EasyTouchControl\Plugins\ETCAxis.cs" Line="339" Column="3" />
+      <File FileName="Assets\Scripts\GameManager\GameSceneManager.cs" Line="108" Column="4" />
+      <File FileName="Assets\Lobby\Scripts\Lobby\LobbyMainMenu.cs" Line="16" Column="4" />
+      <File FileName="Assets\Character\Scripts\AttackBase.cs" Line="63" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

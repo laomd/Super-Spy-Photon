@@ -30,7 +30,7 @@ public class NetworkAnimatorController : AnimatorControllerBase {
 	protected virtual void Update() {
 
 		if (PhotonNetwork.connected) {
-			if (isLocalPlayer) {
+			if (isLocalPlayer && photonView.isOwnerActive) {
 				anim.SetBool ("run", ETCInput.GetAxis ("Vertical") != 0 ||
 					ETCInput.GetAxis ("Horizontal") != 0);
 			}

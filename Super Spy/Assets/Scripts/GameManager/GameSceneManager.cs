@@ -105,7 +105,7 @@ public class GameSceneManager : ManagerBase {
 		foreach (var item in GameObject.FindObjectsOfType<Property>()) {
 			item.enabled = false;
 		}
-		if (PhotonNetwork.player.GetTeam() == victory) {
+		if (PhotonNetwork.player.GetTeam() == victory || (localHero.PropertyComponent() as HeroProperty).isSpy) {
 			gameImage.sprite = Resources.Load<Sprite> ("victory");
 		} else {
 			gameImage.sprite = Resources.Load<Sprite> ("defeat");

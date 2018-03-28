@@ -21,12 +21,6 @@ namespace Prototype.NetworkLobby
 		public bool isReady;
 		public static Dictionary<string, string> spriteToGamePlayer;
 
-		public override void Awake ()
-		{
-			base.Awake ();
-			DontDestroyOnLoad (gameObject);
-		}
-
 		public void Start ()
 		{
 			if (spriteToGamePlayer == null) {

@@ -44,7 +44,7 @@ namespace Prototype.NetworkLobby
 		{
 			base.OnPhotonRandomJoinFailed (codeAndMsg);
 			PhotonNetwork.CreateRoom (Random.Range (0, 10000).ToString(), 
-				new RoomOptions () { MaxPlayers = (byte)maxPlayers}, null);
+				new RoomOptions () { MaxPlayers = (byte)maxPlayers, PlayerTtl = 12*60*1000}, null);
 		}
 
 		public override void OnDisconnectedFromPhoton ()
@@ -100,7 +100,6 @@ namespace Prototype.NetworkLobby
 					int idx = Random.Range(0, players.Length);
 					players [idx].SetScore (1);
 					players [(idx + 1) % players.Length].SetScore (1);
-					PhotonNetwork.room.IsVisible = false;
 				}
 				/*while (PhotonNetwork.player.GetTeam() == PunTeams.Team.none) {
 					yield return null;

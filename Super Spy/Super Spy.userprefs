@@ -1,17 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManager\RoomManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Lobby\Scripts\Lobby\LobbyPlayer.cs">
     <Files>
-      <File FileName="Assets\Character\Scripts\HeroAnimatorController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Character\XiaoBin\Scripts\AnimatorControllerBase.cs" Line="1" Column="1" />
-      <File FileName="Assets\Character\EasyTouchControl\Plugins\ETCAxis.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GameManager\GameSceneManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Lobby\Scripts\Lobby\LobbyMainMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Character\Scripts\AttackBase.cs" Line="1" Column="1" />
-      <File FileName="Assets\Lobby\Scripts\Lobby\LobbyManager.cs" Line="4" Column="34" />
-      <File FileName="Assets\FogOfWar\Scripts\FogOfWar\FogOfWarEffect.cs" Line="133" Column="20" />
-      <File FileName="Assets\FogOfWar\Scripts\FogOfWar\Core\FOWRenderer.cs" Line="10" Column="5" />
-      <File FileName="Assets\Scripts\GameManager\RoomManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameManager\RoomManager.cs" Line="17" Column="39" />
+      <File FileName="Assets\Lobby\Scripts\Lobby\LobbyPlayer.cs" Line="26" Column="28" />
+      <File FileName="Assets\Lobby\Scripts\Lobby\LobbyManager.cs" Line="47" Column="79" />
+      <File FileName="Assets\Scripts\GameManager\DayNightController.cs" Line="14" Column="16" />
+      <File FileName="Assets\Lobby\Scripts\Lobby\ManagerBase.cs" Line="18" Column="3" />
+      <File FileName="Assets\Character\Scripts\SkillController.cs" Line="30" Column="17" />
+      <File FileName="Assets\Character\Scripts\HeroAnimatorController.cs" Line="38" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

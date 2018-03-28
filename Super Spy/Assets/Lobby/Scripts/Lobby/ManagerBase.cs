@@ -9,8 +9,12 @@ public class ManagerBase : Photon.PunBehaviour {
 	public static int maxPlayers;
 
 	public static void LoadScene(int sceneIdx) {
-		PhotonNetwork.automaticallySyncScene = true;
-		SceneManager.LoadSceneAsync (sceneIdx);
+		if (sceneIdx == 1) {
+			PhotonNetwork.automaticallySyncScene = true;
+			PhotonNetwork.LoadLevel (1);
+		} else {
+			SceneManager.LoadSceneAsync (sceneIdx);
+		}
 	}
 
 	public static void ConnectToMaster() {

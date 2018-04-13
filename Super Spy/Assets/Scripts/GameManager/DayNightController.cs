@@ -9,8 +9,8 @@ using UnityEngine.Events;
 
 public class DayNightController : Photon.NetworkBehaviour, IEventSystemHandler {
 	public static DayNightController instance;
-	public static int DayTime = 120;
-	public static int NightTime = 30;
+	public static int DayTime = 10;
+	public static int NightTime = 20;
 	float curTime;
 	public GameObject SpyButton;
 

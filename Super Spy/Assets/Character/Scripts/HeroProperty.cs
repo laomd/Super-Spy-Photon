@@ -40,12 +40,6 @@ public class HeroProperty : HeroPropertyBase {
 	[Header("Skill Properties")]
 	public MagicSkill[] skills;
 
-	public override void Awake ()
-	{
-		base.Awake ();
-		DontDestroyOnLoad (gameObject);
-	}
-
 	public override void OnEnable ()
 	{
 		base.OnEnable ();

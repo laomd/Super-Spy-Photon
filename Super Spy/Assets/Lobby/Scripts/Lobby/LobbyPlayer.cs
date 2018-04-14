@@ -38,8 +38,8 @@ namespace Prototype.NetworkLobby
 		public override void OnPhotonInstantiate (PhotonMessageInfo info)
 		{
 			base.OnPhotonInstantiate (info);
-			PunTeams.Team myteam = (PunTeams.Team)(photonView.instantiationDataField [0]);
-			if (myteam == PhotonNetwork.player.GetTeam()) {
+			PunTeams.Team tmpTeam = (PunTeams.Team)(photonView.instantiationDataField [0]);
+			if (tmpTeam == PhotonNetwork.player.GetTeam()) {
 				transform.SetParent (RoomManager.instance.friendList, false);
 			} else {
 				transform.SetParent (RoomManager.instance.enemyList, false);

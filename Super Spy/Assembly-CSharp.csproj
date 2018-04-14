@@ -211,7 +211,6 @@
      <None Include="Assets\Character\SkillEffect\Resources\skill1\Shader\ParticleAddEffect.shader" />
      <None Include="Assets\Character\SkillEffect\Resources\skill1\Shader\Toon Additive.shader" />
      <None Include="Assets\Character\SkillEffect\Resources\skill1\Shader\ParticleBlendEffect.shader" />
-     <None Include="Assets\Photon Unity Networking\changelog.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

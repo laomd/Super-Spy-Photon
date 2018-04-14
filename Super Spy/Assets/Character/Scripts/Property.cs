@@ -36,6 +36,11 @@ public class Property : Photon.NetworkBehaviour {
 		
 	}
 
+	public virtual void OnRespawn()
+	{
+
+	}
+
 	public virtual void OnDisable()
 	{
 		OnEnaleAttack (false);

@@ -21,6 +21,14 @@ namespace Prototype.NetworkLobby
 		public bool isReady;
 		public static Dictionary<string, string> spriteToGamePlayer;
 
+		PunTeams.Team tmpTeam;
+
+		public override void Awake ()
+		{
+			base.Awake ();
+			DontDestroyOnLoad (gameObject);
+		}
+
 		public void Start ()
 		{
 			if (spriteToGamePlayer == null) {
@@ -35,15 +43,22 @@ namespace Prototype.NetworkLobby
 			}
 		}
 
+		void Update()
+		{
+			if (transform.parent == null && RoomManager.instance) {
+				if (tmpTeam == PhotonNetwork.player.GetTeam()) {
+					transform.SetParent (RoomManager.instance.friendList, false);
+				} else {
+					transform.SetParent (RoomManager.instance.enemyList, false);
+				}
+			}
+		}
+
 		public override void OnPhotonInstantiate (PhotonMessageInfo info)
 		{
 			base.OnPhotonInstantiate (info);
-			PunTeams.Team tmpTeam = (PunTeams.Team)(photonView.instantiationDataField [0]);
-			if (tmpTeam == PhotonNetwork.player.GetTeam()) {
-				transform.SetParent (RoomManager.instance.friendList, false);
-			} else {
-				transform.SetParent (RoomManager.instance.enemyList, false);
-			}
+			tmpTeam = (PunTeams.Team)(photonView.instantiationDataField [0]);
+
 		}
 
 		public void OnChooseHero(Sprite hero) {

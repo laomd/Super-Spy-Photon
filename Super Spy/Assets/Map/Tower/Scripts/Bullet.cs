@@ -37,12 +37,10 @@ public class Bullet : MonoBehaviour
 
 			float rang = Vector3.Distance(transform.position, mTargetPos);//子dan和di人距离
 			float total_time = rang / this.mMoveSpeed;//子dan到di人的shijian
-			if (Time.deltaTime < total_time)
-			{//追上人了
+			if (rang < 8 && Time.deltaTime < total_time) {
 				transform.position = Vector3.Lerp(this.transform.position, this.mTargetPos, Time.deltaTime / total_time);
-			}
-			else//子dan追人
-			{
+
+			}else {
 				Destroy(gameObject);
 			}
 		}

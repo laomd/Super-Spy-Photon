@@ -65,13 +65,19 @@ public class HP : Photon.NetworkBehaviour {
 				if (newBlood >= originBlood) {
 					newBlood = originBlood;
 				}
-				if (newBlood != curBlood) {
-					OnHealthChanged (newBlood);
-				}
 			} else {
-				//PhotonNetwork.Destroy (gameObject);
+				newBlood = 0;
+			}
+			OnHealthChanged (newBlood);
+			if (newBlood == 0) {
+				OnBloodEmpty (enemyTeam);
 			}
 		}
+	}
+
+	public virtual void OnBloodEmpty(PunTeams.Team enemyTeam)
+	{
+		PhotonNetwork.Destroy (gameObject);
 	}
 
 	public virtual void OnHealthChanged(int newBlood) {

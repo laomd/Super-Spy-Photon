@@ -12,4 +12,10 @@ public class HeroHP : HP {
 			base.UpdateColor (newTeam);
 		}
 	}
+
+	public override void OnBloodEmpty (PunTeams.Team enemyTeam)
+	{
+		gameObject.PropertyComponent ().OnRespawn ();
+		base.Start ();
+	}
 }

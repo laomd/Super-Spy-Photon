@@ -40,6 +40,12 @@ public class HeroProperty : HeroPropertyBase {
 	[Header("Skill Properties")]
 	public MagicSkill[] skills;
 
+	public override void Awake ()
+	{
+		base.Awake ();
+		DontDestroyOnLoad (gameObject);
+	}
+
 	public override void OnEnable ()
 	{
 		base.OnEnable ();
@@ -61,6 +67,16 @@ public class HeroProperty : HeroPropertyBase {
 	}
 	public override void Start ()
 	{
+		OnRespawn ();
+		if (isLocalPlayer) {
+			isSpy = PhotonNetwork.player.GetScore () != 0;
+			GameSceneManager.instance.spyKind.SetActive (isSpy);
+		}
+	}
+
+	public override void OnRespawn ()
+	{
+		base.OnRespawn ();
 		if (isLocalPlayer) {
 			PunTeams.Team myTeam = PhotonNetwork.player.GetTeam();
 			if (myTeam == PunTeams.Team.red) {
@@ -69,8 +85,6 @@ public class HeroProperty : HeroPropertyBase {
 				transform.localPosition = blue_quanshui;
 			}
 			transform.LookAt ((blue_quanshui + red_quanshui) / 2);
-			isSpy = PhotonNetwork.player.GetScore () != 0;
-			GameSceneManager.instance.spyKind.SetActive (isSpy);
 		}
 	}
 

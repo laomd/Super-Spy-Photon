@@ -23,7 +23,6 @@ namespace Prototype.NetworkLobby
 			if (PhotonNetwork.inRoom) {
 				PhotonNetwork.LeaveRoom ();
 			}
-			PhotonNetwork.autoCleanUpPlayerObjects = false;
 			ConnectToMaster ();
         }
 
@@ -44,7 +43,7 @@ namespace Prototype.NetworkLobby
 		{
 			base.OnPhotonRandomJoinFailed (codeAndMsg);
 			PhotonNetwork.CreateRoom (Random.Range (0, 10000).ToString(), 
-				new RoomOptions () { MaxPlayers = (byte)maxPlayers, PlayerTtl = 12*60*1000}, null);
+				new RoomOptions () { MaxPlayers = (byte)maxPlayers}, null);
 		}
 
 		public override void OnDisconnectedFromPhoton ()

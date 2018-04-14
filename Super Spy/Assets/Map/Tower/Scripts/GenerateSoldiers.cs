@@ -54,18 +54,17 @@ public class GenerateSoldiers : Photon.NetworkBehaviour {
 		Vector3 pos = transform.position;
 		pos.y = 3;
 		GameObject ins = null;
-		for (int i = 0; i < 3; i++) {
-			if (ins == null) {
-				ins = magician;
-			} else {
-				ins = soldier;
-			}
-			total++;
-			GameObject obj = PhotonNetwork.InstantiateSceneObject (ins.name, pos, Quaternion.identity, 0, null);
-			Property p = obj.PropertyComponent ();
-			p.myTeam = myTeam;
-			(p as SoldierProperty).originDestination = targetPosition;
+		int rd = Random.Range (0, 2);
+		if (rd < 1) {
+			ins = magician;
+		} else {
+			ins = soldier;
 		}
+		total++;
+		GameObject obj = PhotonNetwork.InstantiateSceneObject (ins.name, pos, Quaternion.identity, 0, null);
+		Property p = obj.PropertyComponent ();
+		p.myTeam = myTeam;
+		(p as SoldierProperty).originDestination = targetPosition;
 	}
 
 	Vector3 GetEnermyQuanShui(PunTeams.Team myTeam) {

@@ -27,12 +27,20 @@ public class SkillController : Photon.NetworkBehaviour {
 			GameObject skill_effect = GameObject.Instantiate (skill.effect, transform);
 			SetVisual (false);
 			int lastSpeed = (gameObject.PropertyComponent () as HeroProperty).speed;
+			AttackBase atkb = GetComponent<AttackBase> ();
+			PunTeams.Team lastTeam = atkb.team;
+			if (lastTeam == PunTeams.Team.red) {
+				atkb.OnTeamChanged (PunTeams.Team.blue);
+			} else {
+				atkb.OnTeamChanged (PunTeams.Team.red);
+			}
 			SetSpeed (lastSpeed + 4);
 			DayNightController.instance.onDayNightChanged.AddListener(delegate(bool arg0) {
 				if (!arg0) {
 					Destroy(skill_effect);
 					SetVisual(true);
 					SetSpeed(lastSpeed);
+					atkb.OnTeamChanged(lastTeam);
 				}
 			});
 		}
